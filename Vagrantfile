@@ -79,11 +79,12 @@ Vagrant.configure("2") do |config|
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     source ~/.bashrc
     #install nodejs
-    nvm install 16.16.0
+    nvm install 8.17.0
     # install yarn
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     apt install -y --no-install-recommends yarn
+    apt install -y make
   SHELL
 
   # Starting-up the project after VM boot-up
