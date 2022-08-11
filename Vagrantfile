@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   # https://docs.vagrantup.com.
 
   config.vm.define "deb11-dev-vagrant" do |config|
-    config.vm.hostname = "deb11-dev-vagrant"
+    config.vm.hostname = "docker.vm"
 
     # Every Vagrant development environment requires a box. You can search for
     # boxes at https://vagrantcloud.com/search.
@@ -71,9 +71,19 @@ Vagrant.configure("2") do |config|
   # 
   # Install latest version of git and docker-compose (including docker)
   config.vm.provision "shell", inline: <<-SHELL
-    apt-get update
-    apt-get install -y git
-    apt-get install -y docker-compose
+    apt update
+    apt install -y git
+    apt install -y docker-compose
+    apt install -y curl
+    # install Node Version Manager (a.k.a nvm)
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    source ~/.bashrc
+    #install nodejs
+    nvm install 16.16.0
+    # install yarn
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    apt install -y --no-install-recommends yarn
   SHELL
 
 end

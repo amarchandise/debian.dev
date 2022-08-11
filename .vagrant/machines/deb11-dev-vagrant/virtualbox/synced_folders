@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 {"virtualbox":{"/data":{"guestpath":"/data","hostpath":"C:/Development/Projets","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Development/debian.dev","disabled":false,"__vagrantfile":true}}}
 =======
 {"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Development/debian.dev","disabled":false,"__vagrantfile":true}}}
 >>>>>>> Stashed changes
+=======
+{"virtualbox":{"/data":{"guestpath":"/data","hostpath":"C:/Development","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Development/debian.dev","disabled":false,"__vagrantfile":true}}}
+>>>>>>> 03080ff (added curl, nodejs, npm and yarn to the VM)
