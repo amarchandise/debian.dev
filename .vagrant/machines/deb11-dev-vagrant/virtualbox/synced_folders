@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 {"virtualbox":{"/data":{"guestpath":"/data","hostpath":"C:/Development/Projets","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Development/debian.dev","disabled":false,"__vagrantfile":true}}}
 =======
@@ -7,3 +8,6 @@
 =======
 {"virtualbox":{"/data":{"guestpath":"/data","hostpath":"C:/Development","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Development/debian.dev","disabled":false,"__vagrantfile":true}}}
 >>>>>>> 03080ff (added curl, nodejs, npm and yarn to the VM)
+=======
+{"virtualbox":{"/data":{"guestpath":"/data","hostpath":"C:/Development","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Development/debian.dev","disabled":false,"__vagrantfile":true}}}
+>>>>>>> 9ab33eddb0eb2ac54101caeab5b90d11c4f2f5ee
