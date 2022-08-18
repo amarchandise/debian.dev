@@ -48,7 +48,7 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "../Projets", "/data"
+  #config.vm.synced_folder "../", "/data"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -76,28 +76,4 @@ Vagrant.configure("2") do |config|
     apt-get install -y docker-compose
   SHELL
 
-  # Starting-up the project after VM boot-up
-  #config.trigger.after :up do |trigger|
-  #  trigger.name = "Project start-up"
-  #  trigger.info = "Starting Servlin project..."
-  #  trigger.run_remote = {
-  #    inline: <<-SHELL
-  #      cd /data/Servlin
-  #      docker-compose up -d
-  #    SHELL
-  #  }
-  #end
-
-  # Stopping the project after VM halt
-  #config.trigger.before :halt do |trigger|
-  #  trigger.name = "Project stop"
-  #  trigger.info = "Stopping Servlin project..."
-  #  trigger.run_remote = {
-  #    inline: <<-SHELL
-  #      cd /data/Servlin
-  #      docker-compose down
-  #    SHELL
-  #  }
-  #end
-  
 end
